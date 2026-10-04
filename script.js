@@ -44,8 +44,9 @@ function openModal(modalId) {
   activeModal = modal;
 
   modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
 
-  document.body.style.overflow = "hidden";
+  document.body.classList.add("modal-open");
 
 }
 
@@ -57,8 +58,9 @@ function closeModal() {
   if (!activeModal) return;
 
   activeModal.classList.remove("active");
+  activeModal.setAttribute("aria-hidden", "true");
 
-  document.body.style.overflow = "";
+  document.body.classList.remove("modal-open");
 
   activeModal = null;
 
@@ -153,7 +155,8 @@ const revealElements = document.querySelectorAll(
   ".project-card, " +
   ".skill-row, " +
   ".achievement, " +
-  ".leadership-card"
+  ".leadership-card, " +
+  ".resume-content"
 );
 
 
@@ -237,3 +240,77 @@ interactiveElements.forEach((element) => {
   });
 
 });
+
+/* =====================================================
+   COPY EMAIL
+===================================================== */
+
+const copyEmailButton = document.getElementById("copyEmail");
+
+if (copyEmailButton) {
+
+  copyEmailButton.addEventListener("click", async () => {
+
+    const email = "mudit.chandak32007@gmail.com";
+
+    try {
+
+      await navigator.clipboard.writeText(email);
+
+      copyEmailButton.textContent = "COPIED ✓";
+
+      setTimeout(() => {
+        copyEmailButton.textContent = "COPY EMAIL";
+      }, 2000);
+
+    } catch (error) {
+
+      copyEmailButton.textContent = "COPY FAILED";
+
+      setTimeout(() => {
+        copyEmailButton.textContent = "COPY EMAIL";
+      }, 2000);
+
+    }
+
+  });
+
+}
+
+/* =====================================================
+   NAVBAR SCROLL BEHAVIOR
+===================================================== */
+
+const nav = document.querySelector(".site-nav");
+
+let lastScrollY = window.scrollY;
+
+if (nav) {
+
+  window.addEventListener("scroll", () => {
+
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY <= 20) {
+
+      nav.classList.remove("nav-hidden");
+
+    }
+
+    else if (currentScrollY > lastScrollY) {
+
+      nav.classList.add("nav-hidden");
+
+    }
+
+    else {
+
+      nav.classList.remove("nav-hidden");
+
+    }
+
+    lastScrollY = currentScrollY;
+
+  }, { passive: true });
+
+}

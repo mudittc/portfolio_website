@@ -1,1096 +1,1039 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Mudit Chandak — Portfolio</title>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ================= HERO ================= -->
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
 
-  <main class="hero" id="home">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="#home" class="nav-logo">MUDIT.CHANDAK</a>
 
-    <div class="hero-grid"></div>
+    <div class="nav-links">
+      <a href="#about">ABOUT</a>
+      <a href="#experience">WORK</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#leadership">BEYOND</a>
+      <a href="#resume">RESUME</a>
+      <a href="#contact">CONTACT ↗</a>
+      <a
+        href="https://github.com/mudittc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GITHUB ↗
+      </a>
+    </div>
+  </nav>
 
-    <div class="polaroid">
-      <div class="polaroid-image">
-        <div class="image-placeholder">
-          <span>YOUR<br>IMAGE</span>
+
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+
+  <main>
+
+    <!-- ===================================================
+         HERO
+         =================================================== -->
+
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="polaroid">
+        <div class="polaroid-image">
+          <img src="assets/photo.JPG" alt="Mudit Chandak">
+        </div>
+
+        <div class="polaroid-caption">
+          MUDIT / 2026
         </div>
       </div>
 
-      <div class="polaroid-caption">
-        MUDIT / 2026
+      <div class="hero-content">
+        <h1 class="hero-name">
+          <span>MUDIT</span>
+          <span>CHANDAK</span>
+        </h1>
+
+        <div class="hero-line" aria-hidden="true"></div>
+
+        <button
+          class="enter-button"
+          id="enterButton"
+          type="button"
+        >
+          CLICK TO KNOW MORE
+          <span aria-hidden="true">↘</span>
+        </button>
       </div>
-    </div>
 
-    <div class="hero-content">
-
-      <div class="hero-name">
-        <span>MUDIT</span>
-        <span>CHANDAK</span>
+      <div class="hero-meta" aria-label="Profile information">
+        <span>CS / AI &amp; ML</span>
+        <span>HYDERABAD, INDIA</span>
+        <span>2026</span>
       </div>
 
-      <div class="hero-line"></div>
+      <div class="scroll-indicator" aria-hidden="true">
+        SCROLL
+        <span>↓</span>
+      </div>
+    </section>
 
-      <button class="enter-button" id="enterButton">
-        CLICK TO KNOW MORE
-        <span>↘</span>
-      </button>
 
-    </div>
+    <!-- ===================================================
+         ABOUT
+         =================================================== -->
 
-    <div class="hero-meta">
-      <span>CS / AI & ML</span>
-      <span>HYDERABAD, INDIA</span>
-      <span>2026</span>
-    </div>
+    <section class="section about-section" id="about">
+      <div class="section-number">01</div>
 
-    <!-- Mini experience windows -->
+      <h2 class="section-heading">
+        <span>ABOUT</span>
+        <span>ME</span>
+      </h2>
 
-    <div class="window-stack">
+      <div class="about-layout">
+        <div class="about-intro">
+          <p class="mono-label">WHO AM I?</p>
 
-      <div class="mini-window window-one">
-        <div class="window-bar">
-          <div class="window-dots">
-            <i></i><i></i><i></i>
-          </div>
-          <span>experience.exe</span>
+          <h3>
+            I BUILD THINGS
+            <span>THAT ACTUALLY DO SOMETHING.</span>
+          </h3>
         </div>
 
-        <div class="window-body">
-          <span class="window-label">CURRENT</span>
-
-          <h3>Emsys Energy Services</h3>
+        <div class="about-text">
+          <p>
+            I'm a Computer Science student specializing in AI &amp; Machine Learning,
+            with a growing interest in understanding how intelligent systems can be
+            applied to problems that are difficult to model directly. My work sits
+            somewhere between machine learning, research, and software engineering —
+            from building backend and data systems to experimenting with state-space
+            models, neural networks, and anomaly detection.
+          </p>
 
           <p>
-            Research / Engineering Intern
+            I'm particularly interested in problems where the data is noisy,
+            incomplete, or where we don't fully know what we're looking for. That
+            has led me toward projects involving sensor reliability and forecasting,
+            as well as a broader research project exploring how multiple astronomical
+            data sources can be combined to identify unusual patterns that individual
+            systems might miss. I enjoy taking open-ended problems, breaking them into
+            measurable pieces, and building systems that can actually test the ideas.
           </p>
 
-          <p class="small-text">
-            Hybrid power plants · Forecasting · DSM · Optimization
-          </p>
-        </div>
-
-        <div class="window-footer">•••</div>
-      </div>
-
-
-      <div class="mini-window window-two">
-        <div class="window-bar">
-          <div class="window-dots">
-            <i></i><i></i><i></i>
+          <div class="about-facts">
+            <div>
+              <span>01</span>
+              <p>Backend Development</p>
+            </div>
+            <div>
+              <span>02</span>
+              <p>Machine Learning</p>
+            </div>
+            <div>
+              <span>03</span>
+              <p>Systems &amp; Data</p>
+            </div>
           </div>
-          <span>experience.exe</span>
         </div>
+      </div>
+    </section>
 
-        <div class="window-body">
-          <span class="window-label">PREVIOUS</span>
 
-          <h3>OptionX</h3>
+    <!-- ===================================================
+         EXPERIENCE
+         =================================================== -->
+
+    <section class="section experience-section" id="experience">
+      <div class="section-number">02</div>
+
+      <h2 class="section-heading">
+        <span>WORK</span>
+        <span>EXPERIENCE</span>
+      </h2>
+
+      <div class="experience-windows">
+
+        <!-- Emsys -->
+        <button
+          class="experience-window current"
+          data-modal="emsysModal"
+          type="button"
+        >
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+            <span>experience.exe</span>
+          </div>
+
+          <div class="experience-window-body">
+            <span class="window-label">CURRENT</span>
+
+            <h3>Emsys Energy Services</h3>
+            <h4>Research / Engineering Intern</h4>
+
+            <p>
+              Hybrid power plants · Forecasting · DSM · Optimization
+            </p>
+          </div>
+
+          <div class="window-footer" aria-hidden="true">
+            <span>•••</span>
+          </div>
+        </button>
+
+        <!-- OptionX -->
+        <button
+          class="experience-window previous"
+          data-modal="optionxModal"
+          type="button"
+        >
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+            <span>experience.exe</span>
+          </div>
+
+          <div class="experience-window-body">
+            <span class="window-label">PREVIOUS</span>
+
+            <h3>OptionX</h3>
+            <h4>Software Engineering Intern</h4>
+
+            <p>
+              FastAPI · PostgreSQL · Redis · Financial Data
+            </p>
+          </div>
+
+          <div class="window-footer" aria-hidden="true">
+            <span>•••</span>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         PROJECTS
+         =================================================== -->
+
+    <section class="section projects-section" id="projects">
+      <div class="section-number">03</div>
+
+      <h2 class="section-heading">
+        <span>PROJECTS</span>
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 01 -->
+        <article
+          class="project-card"
+          data-modal="sensorModal"
+          tabindex="0"
+          role="button"
+          aria-label="Open Sensor Reliability project"
+        >
+          <div class="project-top">
+            <span>01</span>
+            <span>ML / SYSTEMS</span>
+          </div>
+
+          <div class="project-number" aria-hidden="true">01</div>
+
+          <h3>
+            SENSOR
+            <br>
+            RELIABILITY
+          </h3>
 
           <p>
-            Software Engineering Intern
+            A machine-learning system for predicting faulty or missing sensor
+            measurements in dynamic systems. Uses nonlinear state-space models,
+            ODE simulations, GRUs and experiments with Physics-Informed Neural Networks.
           </p>
 
-          <p class="small-text">
-            FastAPI · PostgreSQL · Redis · Financial Data
+          <div class="project-tech">
+            PYTORCH · GRU · STATE SPACE · SCIPY
+          </div>
+
+          <div class="project-arrow" aria-hidden="true">↗</div>
+        </article>
+
+
+        <!-- Project 02 -->
+        <article
+          class="project-card"
+          data-modal="fastapiModal"
+          tabindex="0"
+          role="button"
+          aria-label="Open FastAPI Analytics project"
+        >
+          <div class="project-top">
+            <span>02</span>
+            <span>BACKEND</span>
+          </div>
+
+          <div class="project-number" aria-hidden="true">02</div>
+
+          <h3>
+            FASTAPI
+            <br>
+            ANALYTICS
+          </h3>
+
+          <p>
+            Backend platform for user, order and subscription analytics with
+            automated data processing and dashboard-ready reporting.
+          </p>
+
+          <div class="project-tech">
+            FASTAPI · MONGODB · POSTGRESQL · REDIS
+          </div>
+
+          <div class="project-arrow" aria-hidden="true">↗</div>
+        </article>
+
+
+        <!-- ADD FUTURE PROJECTS HERE -->
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         SKILLS
+         =================================================== -->
+
+    <section class="section skills-section" id="skills">
+      <div class="section-number">04</div>
+
+      <h2 class="section-heading">
+        <span>WHAT I</span>
+        <span>USE</span>
+      </h2>
+
+      <div class="skills-layout">
+        <div class="skills-statement">
+          <p>
+            CURRENT
+            <br>
+            <span>TOOLBOX</span>
           </p>
         </div>
 
-        <div class="window-footer">•••</div>
+        <div class="skills-list">
+
+          <div class="skill-row">
+            <span>01</span>
+            <h3>LANGUAGES</h3>
+            <p>Python · Java · C · SQL · JavaScript · TypeScript</p>
+          </div>
+
+          <div class="skill-row">
+            <span>02</span>
+            <h3>BACKEND</h3>
+            <p>FastAPI · REST APIs · JWT · Async Programming</p>
+          </div>
+
+          <div class="skill-row">
+            <span>03</span>
+            <h3>DATABASES</h3>
+            <p>PostgreSQL · MySQL · MongoDB · Redis</p>
+          </div>
+
+          <div class="skill-row">
+            <span>04</span>
+            <h3>ML &amp; DATA</h3>
+            <p>PyTorch · GRU/RNN · State Space Models · PINNs · Pandas · NumPy · SciPy</p>
+          </div>
+
+          <div class="skill-row">
+            <span>05</span>
+            <h3>FRONTEND</h3>
+            <p>React · Tailwind CSS · HTML · CSS</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         LEADERSHIP / BEYOND CODE
+         =================================================== -->
+
+    <section class="section leadership-section" id="leadership">
+      <div class="section-number">05</div>
+
+      <h2 class="section-heading">
+        <span>BEYOND</span>
+        <span>CODE</span>
+      </h2>
+
+      <div class="leadership-grid">
+
+        <article class="leadership-card">
+          <span class="card-number">01</span>
+
+          <h3>
+            PRODUCTION
+            <br>
+            HEAD
+          </h3>
+
+          <p>Media Club · Mahindra University</p>
+          <span class="date">2024 — JUL 2025</span>
+
+          <div class="card-description">
+            Led media production teams across photography,
+            videography, editing and event coverage.
+          </div>
+        </article>
+
+
+        <article class="leadership-card">
+          <span class="card-number">02</span>
+
+          <h3>
+            COMPUTER
+            <br>
+            SCIENCE CLUB
+          </h3>
+
+          <p>Head · Sri Venkateshwar International School</p>
+          <span class="date">2023 — 2024</span>
+
+          <div class="card-description">
+            Led coding activities, technical sessions,
+            competitions and student projects.
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         ACHIEVEMENTS
+         =================================================== -->
+
+    <section class="section achievements-section" id="achievements">
+      <div class="section-number">06</div>
+
+      <h2 class="section-heading">
+        <span>THINGS I'VE</span>
+        <span>DONE</span>
+      </h2>
+
+      <div class="achievement-list">
+
+        <div class="achievement">
+          <span>01</span>
+          <h3>GOLD MEDAL</h3>
+          <p>Mahabehes National Debate Competition</p>
+        </div>
+
+        <div class="achievement">
+          <span>02</span>
+          <h3>BRONZE MEDAL</h3>
+          <p>SilverZone International Maths Olympiad</p>
+        </div>
+
+        <div class="achievement">
+          <span>03</span>
+          <h3>4TH POSITION</h3>
+          <p>SilverZone International Maths Olympiad — Level 2</p>
+        </div>
+
+        <div class="achievement">
+          <span>04</span>
+          <h3>3RD PLACE</h3>
+          <p>State-Level STEM / Project Exhibition</p>
+        </div>
+
+        <div class="achievement">
+          <span>05</span>
+          <h3>ZONAL LEVEL</h3>
+          <p>Government of Delhi STEM Exhibition</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         RESUME
+         =================================================== -->
+
+    <section class="resume-section" id="resume">
+      <div class="section-number">07</div>
+
+      <h2 class="section-heading">
+        <span>MY</span>
+        <span>RESUME</span>
+      </h2>
+
+      <div class="resume-content">
+        <div class="resume-intro">
+          <p class="mono-label">CURRICULUM VITAE</p>
+
+          <h3>
+            WANT TO KNOW
+            <span>WHAT I CAN DO?</span>
+          </h3>
+
+          <p>
+            A concise overview of my education, experience,
+            technical skills, projects and achievements.
+          </p>
+        </div>
+
+        <div class="resume-actions">
+          <button
+            class="resume-button"
+            data-modal="resumeModal"
+            type="button"
+          >
+            PREVIEW RESUME ↗
+          </button>
+
+          <a
+            href="assets/resume.pdf"
+            download="Mudit_Chandak_Resume.pdf"
+            class="resume-button resume-download"
+          >
+            DOWNLOAD RESUME ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================
+         CONTACT
+         =================================================== -->
+
+    <section class="contact-section" id="contact">
+      <p class="contact-eyebrow">LET'S BUILD SOMETHING</p>
+
+      <h2>
+        GET IN
+        <br>
+        <span>TOUCH.</span>
+      </h2>
+
+      <div class="contact-actions">
+        <a
+          href="mailto:mudit.chandak32007@gmail.com"
+          class="contact-button"
+        >
+          EMAIL ME ↗
+        </a>
+
+        <button
+          class="resume-button"
+          data-modal="resumeModal"
+          type="button"
+        >
+          PREVIEW RESUME ↗
+        </button>
+
+        <a
+          href="https://github.com/mudittc"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-social"
+        >
+          GITHUB ↗
+        </a>
       </div>
 
-    </div>
-
-    <div class="scroll-indicator">
-      SCROLL
-      <span>↓</span>
-    </div>
+      <div class="contact-bottom">
+        <span>MUDIT.CHANDAK</span>
+        <span>2026</span>
+      </div>
+    </section>
 
   </main>
 
+    <footer class="site-footer">
 
-  <!-- ================= ABOUT ================= -->
+    <div class="footer-main">
 
-  <section class="section about-section" id="about">
-
-    <div class="section-number">01</div>
-
-    <div class="section-heading">
-      <span>ABOUT</span>
-      <span>ME</span>
-    </div>
-
-    <div class="about-layout">
-
-      <div class="about-intro">
-        <p class="mono-label">WHO AM I?</p>
+      <div class="footer-brand">
+        <p class="footer-kicker">
+          MUDIT.CHANDAK
+        </p>
 
         <h2>
-          I BUILD THINGS
-          <span>THAT ACTUALLY DO SOMETHING.</span>
+          LET'S BUILD
+          <br>
+          <span>SOMETHING.</span>
         </h2>
+
+        <p class="footer-role">
+          CS / AI &amp; ML
+        </p>
       </div>
 
-      <div class="about-text">
-        <p>
-          I'm a Computer Science student specializing in
-          Artificial Intelligence & Machine Learning at
-          Mahindra University.
-        </p>
 
-        <p>
-          I enjoy working across backend systems, machine
-          learning and data-driven applications — especially
-          when software meets a real-world engineering problem.
-        </p>
-
-        <div class="about-facts">
-          <div>
-            <span>01</span>
-            <p>Backend Development</p>
-          </div>
-
-          <div>
-            <span>02</span>
-            <p>Machine Learning</p>
-          </div>
-
-          <div>
-            <span>03</span>
-            <p>Systems & Data</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
+      <nav
+        class="footer-nav"
+        aria-label="Footer navigation"
+      >
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
 
 
-  <!-- ================= EXPERIENCE ================= -->
+      <div class="footer-links">
 
-  <section class="section experience-section" id="experience">
+        <a href="mailto:mudit.chandak32007@gmail.com">
+          EMAIL ↗
+        </a>
 
-    <div class="section-number">02</div>
-
-    <div class="section-heading">
-        <span>WORK</span>
-        <span>EXPERIENCE</span>
-    </div>
-
-    <div class="experience-windows">
-
-        <!-- EMSYS -->
+        <a
+          href="https://github.com/mudittc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GITHUB ↗
+        </a>
 
         <button
-        class="experience-window current"
-        data-modal="emsysModal"
+          type="button"
+          data-modal="resumeModal"
         >
-
-        <div class="window-bar">
-
-            <div class="window-dots">
-            <i></i>
-            <i></i>
-            <i></i>
-            </div>
-
-            <span>experience.exe</span>
-
-        </div>
-
-        <div class="experience-window-body">
-
-            <span class="window-label">
-            CURRENT
-            </span>
-
-            <h2>Emsys Energy Services</h2>
-
-            <h3>Research / Engineering Intern</h3>
-
-            <p>
-            Hybrid power plants · Forecasting · DSM · Optimization
-            </p>
-
-        </div>
-
-        <div class="window-footer">
-            <span>•••</span>
-        </div>
-
+          RESUME ↗
         </button>
 
-
-        <!-- OPTIONX -->
-
-        <button
-        class="experience-window previous"
-        data-modal="optionxModal"
-        >
-
-        <div class="window-bar">
-
-            <div class="window-dots">
-            <i></i>
-            <i></i>
-            <i></i>
-            </div>
-
-            <span>experience.exe</span>
-
-        </div>
-
-        <div class="experience-window-body">
-
-            <span class="window-label">
-            PREVIOUS
-            </span>
-
-            <h2>OptionX</h2>
-
-            <h3>Software Engineering Intern</h3>
-
-            <p>
-            FastAPI · PostgreSQL · Redis · Financial Data
-            </p>
-
-        </div>
-
-        <div class="window-footer">
-            <span>•••</span>
-        </div>
-
-        </button>
-
-    </div>
-
-    </section>
-
-  <!-- ================= PROJECTS ================= -->
-
-  <section class="section projects-section" id="projects">
-
-    <div class="section-number">03</div>
-
-    <div class="section-heading">
-      <span>SELECTED</span>
-      <span>PROJECTS</span>
-    </div>
-
-    <div class="projects-grid">
-
-      <!-- Project 01 -->
-
-      <article
-        class="project-card featured"
-        data-modal="sensorModal"
-        tabindex="0"
-        role="button"
-        >
-
-        <div class="project-top">
-          <span>01 / 03</span>
-          <span>ML / SYSTEMS</span>
-        </div>
-
-        <div class="project-number">01</div>
-
-        <h2>
-          SENSOR
-          <br>
-          RELIABILITY
-        </h2>
-
-        <p>
-          A machine-learning system for predicting faulty
-          or missing sensor measurements in dynamic systems.
-          Uses nonlinear state-space models, ODE simulations,
-          GRUs and experiments with Physics-Informed Neural Networks.
-        </p>
-
-        <div class="project-tech">
-          PYTORCH · GRU · STATE SPACE · SCIPY
-        </div>
-
-        <div class="project-arrow">↗</div>
-
-      </article>
-
-
-      <!-- Project 02 -->
-
-      <article
-        class="project-card"
-        data-modal="fastapiModal"
-        tabindex="0"
-        role="button"
-        >
-
-        <div class="project-top">
-          <span>02 / 03</span>
-          <span>BACKEND</span>
-        </div>
-
-        <h2>
-          FASTAPI
-          <br>
-          ANALYTICS
-        </h2>
-
-        <p>
-          Backend platform for user, order and subscription
-          analytics with automated data processing and
-          dashboard-ready reporting.
-        </p>
-
-        <div class="project-tech">
-          FASTAPI · MONGODB · POSTGRESQL · REDIS
-        </div>
-
-        <div class="project-arrow">↗</div>
-
-      </article>
-
-
-      <!-- Project 03 -->
-
-      <article
-        class="project-card"
-        data-modal="nfcModal"
-        tabindex="0"
-        role="button"
-        >
-
-        <div class="project-top">
-          <span>03 / 03</span>
-          <span>HARDWARE / SOFTWARE</span>
-        </div>
-
-        <h2>
-          NFC
-          <br>
-          HEALTHCARE
-        </h2>
-
-        <p>
-          NFC-based Android application for quickly accessing
-          essential patient information using an NFC card and
-          MySQL-backed records.
-        </p>
-
-        <div class="project-tech">
-          PYTHON · MYSQL · ANDROID · NFC
-        </div>
-
-        <div class="project-arrow">↗</div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- ================= SKILLS ================= -->
-
-  <section class="section skills-section" id="skills">
-
-    <div class="section-number">04</div>
-
-    <div class="section-heading">
-      <span>WHAT I</span>
-      <span>USE</span>
-    </div>
-
-    <div class="skills-layout">
-
-      <div class="skills-statement">
-        <p>
-          CURRENT
-          <br>
-          <span>TOOLBOX</span>
-        </p>
-      </div>
-
-      <div class="skills-list">
-
-        <div class="skill-row">
-          <span>01</span>
-          <h3>LANGUAGES</h3>
-          <p>Python · Java · C · SQL · JavaScript · TypeScript</p>
-        </div>
-
-        <div class="skill-row">
-          <span>02</span>
-          <h3>BACKEND</h3>
-          <p>FastAPI · REST APIs · JWT · Async Programming</p>
-        </div>
-
-        <div class="skill-row">
-          <span>03</span>
-          <h3>DATABASES</h3>
-          <p>PostgreSQL · MySQL · MongoDB · Redis</p>
-        </div>
-
-        <div class="skill-row">
-          <span>04</span>
-          <h3>ML & DATA</h3>
-          <p>PyTorch · GRU/RNN · State Space Models · PINNs · Pandas · NumPy · SciPy</p>
-        </div>
-
-        <div class="skill-row">
-          <span>05</span>
-          <h3>FRONTEND</h3>
-          <p>React · Tailwind CSS · HTML · CSS</p>
-        </div>
-
       </div>
 
     </div>
 
-  </section>
 
+    <div class="footer-bottom">
 
-  <!-- ================= LEADERSHIP ================= -->
+      <span>
+        © 2026 MUDIT CHANDAK
+      </span>
 
-  <section class="section leadership-section" id="leadership">
+      <span>
+        BUILT WITH HTML / CSS / JAVASCRIPT
+      </span>
 
-    <div class="section-number">05</div>
-
-    <div class="section-heading">
-      <span>BEYOND</span>
-      <span>CODE</span>
-    </div>
-
-    <div class="leadership-grid">
-
-      <div class="leadership-card">
-
-        <span class="card-number">01</span>
-
-        <h2>PRODUCTION<br>HEAD</h2>
-
-        <p>Media Club · Mahindra University</p>
-
-        <span class="date">2024 — JUL 2025</span>
-
-        <div class="card-description">
-          Led media production teams across photography,
-          videography, editing and event coverage.
-        </div>
-
-      </div>
-
-
-      <div class="leadership-card">
-
-        <span class="card-number">02</span>
-
-        <h2>COMPUTER<br>SCIENCE CLUB</h2>
-
-        <p>Head · Sri Venkateshwar International School</p>
-
-        <span class="date">2023 — 2024</span>
-
-        <div class="card-description">
-          Led coding activities, technical sessions,
-          competitions and student projects.
-        </div>
-
-      </div>
+      <a href="#home">
+        BACK TO TOP ↑
+      </a>
 
     </div>
 
-  </section>
+  </footer>
 
-
-  <!-- ================= ACHIEVEMENTS ================= -->
-
-  <section class="section achievements-section" id="achievements">
-
-    <div class="section-number">06</div>
-
-    <div class="section-heading">
-      <span>THINGS I'VE</span>
-      <span>DONE</span>
-    </div>
-
-    <div class="achievement-list">
-
-      <div class="achievement">
-        <span>01</span>
-        <h3>GOLD MEDAL</h3>
-        <p>Mahabehes National Debate Competition</p>
-      </div>
-
-      <div class="achievement">
-        <span>02</span>
-        <h3>BRONZE MEDAL</h3>
-        <p>SilverZone International Maths Olympiad</p>
-      </div>
-
-      <div class="achievement">
-        <span>03</span>
-        <h3>4TH POSITION</h3>
-        <p>SilverZone International Maths Olympiad — Level 2</p>
-      </div>
-
-      <div class="achievement">
-        <span>04</span>
-        <h3>3RD PLACE</h3>
-        <p>State-Level STEM / Project Exhibition</p>
-      </div>
-
-      <div class="achievement">
-        <span>05</span>
-        <h3>ZONAL LEVEL</h3>
-        <p>Government of Delhi STEM Exhibition</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ================= CONTACT ================= -->
-
-  <section class="contact-section" id="contact">
-
-    <div class="contact-eyebrow">
-      HAVE SOMETHING IN MIND?
-    </div>
-
-    <h1>
-      LET'S
-      <br>
-      <span>MAKE SOMETHING.</span>
-    </h1>
-
-    <a
-      href="mailto:mudit.chandak32007@gmail.com"
-      class="contact-button"
-    >
-      SAY HELLO ↗
-    </a>
-
-    <div class="contact-bottom">
-      <span>MUDIT CHANDAK</span>
-      <span>CS / AI & ML</span>
-      <span>2026</span>
-    </div>
-
-  </section>
 
   <!-- =====================================================
-        EXPERIENCE MODALS
-    ===================================================== -->
+       MODALS
+       ===================================================== -->
+
+  <!-- Resume PDF -->
+  <div
+    class="modal"
+    id="resumeModal"
+    aria-hidden="true"
+  >
+    <div class="modal-window resume-pdf-window">
+      <div class="modal-window-bar">
+        <div class="modal-window-title">
+          <div class="window-dots" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <span>mudit_resume.pdf</span>
+        </div>
+
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close resume preview"
+        >
+          ×
+        </button>
+      </div>
+
+      <div class="resume-pdf-viewer">
+        <iframe
+          src="assets/resume.pdf"
+          title="Mudit Chandak Resume"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
 
-    <!-- EMSYS -->
+  <!-- ===================================================
+       EXPERIENCE MODALS
+       =================================================== -->
 
-    <div class="modal" id="emsysModal">
-
+  <!-- Emsys -->
+  <div class="modal" id="emsysModal" aria-hidden="true">
     <div class="modal-window">
 
-        <div class="modal-window-bar">
-
+      <div class="modal-window-bar">
         <div class="modal-window-title">
-
-            <div class="window-dots">
+          <div class="window-dots" aria-hidden="true">
             <i></i>
             <i></i>
             <i></i>
-            </div>
+          </div>
 
-            <span>emsys.exe</span>
-
+          <span>emsys.exe</span>
         </div>
 
-        <button class="modal-close" aria-label="Close">
-            ×
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close Emsys experience"
+        >
+          ×
         </button>
+      </div>
 
-        </div>
-
-
-        <div class="modal-content">
-
+      <div class="modal-content">
         <div class="modal-meta">
-            <span>01 / EXPERIENCE</span>
-            <span>2026 — PRESENT</span>
+          <span>01 / EXPERIENCE</span>
+          <span>2026 — PRESENT</span>
         </div>
 
         <h2>EMSYS<br>ENERGY</h2>
 
         <div class="modal-role">
-            Research / Engineering Intern
+          Research / Engineering Intern
         </div>
 
         <p>
-            Working on generation and storage schedule optimization
-            for hybrid renewable power plants. The work involves
-            understanding how solar, wind and storage assets can be
-            coordinated while accounting for forecasting, power
-            trading and India's Deviation Settlement Mechanism.
+          Working on generation and storage schedule optimization for hybrid
+          renewable power plants. The work involves understanding how solar,
+          wind and storage assets can be coordinated while accounting for
+          forecasting, power trading and India's Deviation Settlement Mechanism.
         </p>
 
-
         <div class="modal-detail-grid">
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>WHAT I WORK ON</h4>
-
             <ul>
-                <li>Generation & storage scheduling</li>
-                <li>Renewable-energy forecasting</li>
-                <li>Power trading analysis</li>
-                <li>Deviation Settlement Mechanism</li>
-                <li>Hybrid power plant optimization</li>
+              <li>Generation &amp; storage scheduling</li>
+              <li>Renewable-energy forecasting</li>
+              <li>Power trading analysis</li>
+              <li>Deviation Settlement Mechanism</li>
+              <li>Hybrid power plant optimization</li>
             </ul>
+          </div>
 
-            </div>
-
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>FOCUS</h4>
-
             <ul>
-                <li>Solar generation</li>
-                <li>Wind generation</li>
-                <li>Battery storage</li>
-                <li>Schedule optimization</li>
-                <li>Revenue optimization</li>
+              <li>Solar generation</li>
+              <li>Wind generation</li>
+              <li>Battery storage</li>
+              <li>Schedule optimization</li>
+              <li>Revenue optimization</li>
             </ul>
-
-            </div>
-
+          </div>
         </div>
-
 
         <div class="modal-tags">
-
-            <span>OPTIMIZATION</span>
-            <span>FORECASTING</span>
-            <span>DSM</span>
-            <span>RENEWABLE ENERGY</span>
-
+          <span>OPTIMIZATION</span>
+          <span>FORECASTING</span>
+          <span>DSM</span>
+          <span>RENEWABLE ENERGY</span>
         </div>
-
-        </div>
+      </div>
 
     </div>
-
-    </div>
-
+  </div>
 
 
-    <!-- OPTIONX -->
-
-    <div class="modal" id="optionxModal">
-
+  <!-- OptionX -->
+  <div class="modal" id="optionxModal" aria-hidden="true">
     <div class="modal-window">
 
-        <div class="modal-window-bar">
-
+      <div class="modal-window-bar">
         <div class="modal-window-title">
-
-            <div class="window-dots">
+          <div class="window-dots" aria-hidden="true">
             <i></i>
             <i></i>
             <i></i>
-            </div>
+          </div>
 
-            <span>optionx.exe</span>
-
+          <span>optionx.exe</span>
         </div>
 
-        <button class="modal-close" aria-label="Close">
-            ×
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close OptionX experience"
+        >
+          ×
         </button>
+      </div>
 
-        </div>
-
-
-        <div class="modal-content">
-
+      <div class="modal-content">
         <div class="modal-meta">
-            <span>02 / EXPERIENCE</span>
-            <span>JUN — JUL 2025</span>
+          <span>02 / EXPERIENCE</span>
+          <span>JUN — JUL 2025</span>
         </div>
 
         <h2>OPTIONX</h2>
 
         <div class="modal-role">
-            Software Engineering Intern
+          Software Engineering Intern
         </div>
 
         <p>
-            Worked on backend systems, financial analytics and
-            automated data-processing workflows. Built APIs and
-            pipelines for handling market and business data while
-            contributing to dashboards and automated reporting.
+          Worked on backend systems, financial analytics and automated
+          data-processing workflows. Built APIs and pipelines for handling
+          market and business data while contributing to dashboards and
+          automated reporting.
         </p>
 
-
         <div class="modal-detail-grid">
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>WHAT I BUILT</h4>
-
             <ul>
-                <li>FastAPI backend APIs</li>
-                <li>Automated data pipelines</li>
-                <li>Financial analytics systems</li>
-                <li>Market-data integrations</li>
-                <li>AI-powered newsletter pipeline</li>
+              <li>FastAPI backend APIs</li>
+              <li>Automated data pipelines</li>
+              <li>Financial analytics systems</li>
+              <li>Market-data integrations</li>
+              <li>AI-powered newsletter pipeline</li>
             </ul>
+          </div>
 
-            </div>
-
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>TECHNOLOGY</h4>
-
             <ul>
-                <li>Python & FastAPI</li>
-                <li>PostgreSQL</li>
-                <li>Redis</li>
-                <li>SQLAlchemy</li>
-                <li>React & Tailwind CSS</li>
+              <li>Python &amp; FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>SQLAlchemy</li>
+              <li>React &amp; Tailwind CSS</li>
             </ul>
-
-            </div>
-
+          </div>
         </div>
-
 
         <div class="modal-tags">
-
-            <span>FASTAPI</span>
-            <span>PYTHON</span>
-            <span>POSTGRESQL</span>
-            <span>REDIS</span>
-            <span>REACT</span>
-
+          <span>FASTAPI</span>
+          <span>PYTHON</span>
+          <span>POSTGRESQL</span>
+          <span>REDIS</span>
+          <span>REACT</span>
         </div>
-
-        </div>
+      </div>
 
     </div>
-
-    </div>
-
-     <!-- =====================================================
-        PROJECT MODALS
-    ===================================================== -->
+  </div>
 
 
-    <!-- SENSOR RELIABILITY -->
+  <!-- ===================================================
+       PROJECT MODALS
+       =================================================== -->
 
-    <div class="modal" id="sensorModal">
-
+  <!-- Sensor Reliability -->
+  <div class="modal" id="sensorModal" aria-hidden="true">
     <div class="modal-window">
 
-        <div class="modal-window-bar">
-
+      <div class="modal-window-bar">
         <div class="modal-window-title">
-
-            <div class="window-dots">
+          <div class="window-dots" aria-hidden="true">
             <i></i>
             <i></i>
             <i></i>
-            </div>
+          </div>
 
-            <span>sensor_reliability.exe</span>
-
+          <span>sensor_reliability.exe</span>
         </div>
 
-        <button class="modal-close">×</button>
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close Sensor Reliability project"
+        >
+          ×
+        </button>
+      </div>
 
-        </div>
-
-
-        <div class="modal-content">
-
+      <div class="modal-content">
         <div class="modal-meta">
-            <span>01 / PROJECT</span>
-            <span>ML / SYSTEMS</span>
+          <span>01 / PROJECT</span>
+          <span>ML / SYSTEMS</span>
         </div>
 
         <h2>SENSOR<br>RELIABILITY</h2>
 
         <div class="modal-role">
-            State Space Modeling + Neural Forecasting
+          State Space Modeling + Neural Forecasting
         </div>
 
         <p>
-            A machine-learning system designed to predict faulty or
-            missing sensor measurements in dynamic systems. The
-            project combines physical system simulation with neural
-            forecasting models to explore fault-tolerant state
-            estimation.
+          A machine-learning system designed to predict faulty or missing
+          sensor measurements in dynamic systems. The project combines
+          physical system simulation with neural forecasting models to
+          explore fault-tolerant state estimation.
         </p>
 
-
         <div class="modal-detail-grid">
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>WHAT I BUILT</h4>
-
             <ul>
-                <li>Nonlinear state-space simulations</li>
-                <li>ODE-based system modeling</li>
-                <li>Noisy sensor datasets</li>
-                <li>GRU forecasting models</li>
-                <li>Variable physical parameters</li>
+              <li>Nonlinear state-space simulations</li>
+              <li>ODE-based system modeling</li>
+              <li>Noisy sensor datasets</li>
+              <li>GRU forecasting models</li>
+              <li>Variable physical parameters</li>
             </ul>
+          </div>
 
-            </div>
-
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>RESEARCH DIRECTION</h4>
-
             <ul>
-                <li>Sensor failure prediction</li>
-                <li>Fault-tolerant systems</li>
-                <li>Physics-informed learning</li>
-                <li>PINN experimentation</li>
-                <li>Dynamic-system forecasting</li>
+              <li>Sensor failure prediction</li>
+              <li>Fault-tolerant systems</li>
+              <li>Physics-informed learning</li>
+              <li>PINN experimentation</li>
+              <li>Dynamic-system forecasting</li>
             </ul>
-
-            </div>
-
+          </div>
         </div>
-
 
         <div class="modal-tags">
-
-            <span>PYTORCH</span>
-            <span>GRU</span>
-            <span>STATE SPACE</span>
-            <span>ODE</span>
-            <span>PINNs</span>
-            <span>SCIPY</span>
-
+          <span>PYTORCH</span>
+          <span>GRU</span>
+          <span>STATE SPACE</span>
+          <span>ODE</span>
+          <span>PINNs</span>
+          <span>SCIPY</span>
         </div>
-
-        </div>
+      </div>
 
     </div>
-
-    </div>
-
+  </div>
 
 
-    <!-- FASTAPI -->
-
-    <div class="modal" id="fastapiModal">
-
+  <!-- FastAPI Analytics -->
+  <div class="modal" id="fastapiModal" aria-hidden="true">
     <div class="modal-window">
 
-        <div class="modal-window-bar">
-
+      <div class="modal-window-bar">
         <div class="modal-window-title">
-
-            <div class="window-dots">
+          <div class="window-dots" aria-hidden="true">
             <i></i>
             <i></i>
             <i></i>
-            </div>
+          </div>
 
-            <span>analytics.exe</span>
-
+          <span>analytics.exe</span>
         </div>
 
-        <button class="modal-close">×</button>
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close FastAPI Analytics project"
+        >
+          ×
+        </button>
+      </div>
 
-        </div>
-
-
-        <div class="modal-content">
-
+      <div class="modal-content">
         <div class="modal-meta">
-            <span>02 / PROJECT</span>
-            <span>BACKEND</span>
+          <span>02 / PROJECT</span>
+          <span>BACKEND</span>
         </div>
 
         <h2>FASTAPI<br>ANALYTICS</h2>
 
         <div class="modal-role">
-            Analytics & Automation Platform
+          Analytics &amp; Automation Platform
         </div>
 
         <p>
-            A backend platform for processing user, order and
-            subscription data and converting it into analytics and
-            dashboard-ready reports.
+          A backend platform for processing user, order and subscription
+          data and converting it into analytics and dashboard-ready reports.
         </p>
 
-
         <div class="modal-detail-grid">
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>FEATURES</h4>
-
             <ul>
-                <li>User analytics</li>
-                <li>Order analytics</li>
-                <li>Subscription analysis</li>
-                <li>Automated reporting</li>
-                <li>Dashboard APIs</li>
+              <li>User analytics</li>
+              <li>Order analytics</li>
+              <li>Subscription analysis</li>
+              <li>Automated reporting</li>
+              <li>Dashboard APIs</li>
             </ul>
+          </div>
 
-            </div>
-
-
-            <div class="modal-detail">
-
+          <div class="modal-detail">
             <h4>STACK</h4>
-
             <ul>
-                <li>FastAPI</li>
-                <li>Python</li>
-                <li>MongoDB</li>
-                <li>PostgreSQL</li>
-                <li>Redis</li>
-                <li>JWT authentication</li>
+              <li>FastAPI</li>
+              <li>Python</li>
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>JWT authentication</li>
             </ul>
-
-            </div>
-
+          </div>
         </div>
-
 
         <div class="modal-tags">
-
-            <span>FASTAPI</span>
-            <span>PYTHON</span>
-            <span>MONGODB</span>
-            <span>POSTGRESQL</span>
-            <span>REDIS</span>
-
+          <span>FASTAPI</span>
+          <span>PYTHON</span>
+          <span>MONGODB</span>
+          <span>POSTGRESQL</span>
+          <span>REDIS</span>
         </div>
-
-        </div>
+      </div>
 
     </div>
+  </div>
 
-    </div>
-
-
-
-    <!-- NFC -->
-
-    <div class="modal" id="nfcModal">
-
-    <div class="modal-window">
-
-        <div class="modal-window-bar">
-
-        <div class="modal-window-title">
-
-            <div class="window-dots">
-            <i></i>
-            <i></i>
-            <i></i>
-            </div>
-
-            <span>nfc_healthcare.exe</span>
-
-        </div>
-
-        <button class="modal-close">×</button>
-
-        </div>
-
-
-        <div class="modal-content">
-
-        <div class="modal-meta">
-            <span>03 / PROJECT</span>
-            <span>HARDWARE / SOFTWARE</span>
-        </div>
-
-        <h2>NFC<br>HEALTHCARE</h2>
-
-        <div class="modal-role">
-            NFC-Based Healthcare Record System
-        </div>
-
-        <p>
-            An NFC-based Android application designed to provide
-            quick access to essential patient information through
-            an NFC card backed by a MySQL database.
-        </p>
-
-
-        <div class="modal-detail-grid">
-
-            <div class="modal-detail">
-
-            <h4>FUNCTIONALITY</h4>
-
-            <ul>
-                <li>NFC card scanning</li>
-                <li>Patient record retrieval</li>
-                <li>Basic patient information</li>
-                <li>MySQL data storage</li>
-            </ul>
-
-            </div>
-
-
-            <div class="modal-detail">
-
-            <h4>STACK</h4>
-
-            <ul>
-                <li>Python</li>
-                <li>MySQL</li>
-                <li>Android</li>
-                <li>NFC</li>
-            </ul>
-
-            </div>
-
-        </div>
-
-
-        <div class="modal-tags">
-
-            <span>PYTHON</span>
-            <span>MYSQL</span>
-            <span>ANDROID</span>
-            <span>NFC</span>
-
-        </div>
-
-        </div>
-
-    </div>
-
-    </div>
-
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
 
   <script src="script.js"></script>
 
