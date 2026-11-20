@@ -242,39 +242,50 @@ interactiveElements.forEach((element) => {
 });
 
 /* =====================================================
-   COPY EMAIL
+   EMAIL LINK: COPY ADDRESS AND OPEN MAIL APP
 ===================================================== */
 
 const copyEmailButton = document.getElementById("copyEmail");
 
 if (copyEmailButton) {
+  const email = "mudit.chandak32007@gmail.com";
+  const defaultLabel = copyEmailButton.textContent.trim();
 
-  copyEmailButton.addEventListener("click", async () => {
-
-    const email = "mudit.chandak32007@gmail.com";
-
+  async function copyEmailToClipboard() {
     try {
-
-      await navigator.clipboard.writeText(email);
-
-      copyEmailButton.textContent = "COPIED ✓";
-
-      setTimeout(() => {
-        copyEmailButton.textContent = "COPY EMAIL";
-      }, 2000);
-
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(email);
+      } else {
+        throw new Error("Clipboard API unavailable");
+      }
     } catch (error) {
-
-      copyEmailButton.textContent = "COPY FAILED";
-
-      setTimeout(() => {
-        copyEmailButton.textContent = "COPY EMAIL";
-      }, 2000);
-
+      const temporaryInput = document.createElement("textarea");
+      temporaryInput.value = email;
+      temporaryInput.setAttribute("readonly", "");
+      temporaryInput.style.position = "fixed";
+      temporaryInput.style.opacity = "0";
+      document.body.appendChild(temporaryInput);
+      temporaryInput.select();
+      const copied = document.execCommand("copy");
+      temporaryInput.remove();
+      if (!copied) throw new Error("Clipboard copy failed");
     }
 
-  });
+    copyEmailButton.textContent = "COPIED ✓";
+    window.setTimeout(() => {
+      copyEmailButton.textContent = defaultLabel;
+    }, 2000);
+  }
 
+  copyEmailButton.addEventListener("click", () => {
+    // The mailto link keeps its normal behavior while the address is copied.
+    copyEmailToClipboard().catch(() => {
+      copyEmailButton.textContent = "EMAIL ME ↗";
+      window.setTimeout(() => {
+        copyEmailButton.textContent = defaultLabel;
+      }, 2000);
+    });
+  });
 }
 
 /* =====================================================

@@ -325,6 +325,35 @@
           <div class="project-arrow" aria-hidden="true">↗</div>
         </article>
 
+        <!-- Project 03 -->
+        <article
+          class="project-card"
+          data-modal="movieMatchModal"
+          tabindex="0"
+          role="button"
+          aria-label="Open MovieMatch project"
+        >
+          <div class="project-top">
+            <span>03 / 03</span>
+            <span>RECOMMENDATION SYSTEMS</span>
+          </div>
+
+          <div class="project-number" aria-hidden="true">03</div>
+
+          <h3>MOVIE<br>MATCH</h3>
+
+          <p>
+            A movie discovery app that recommends films from a TMDB-derived catalog,
+            combining plot and metadata similarity with genre fit and Bayesian quality.
+          </p>
+
+          <div class="project-tech">
+            PYTHON · FASTAPI · TF-IDF · SCIKIT-LEARN
+          </div>
+
+          <div class="project-arrow" aria-hidden="true">↗</div>
+        </article>
+
       </div>
     </section>
 
@@ -553,8 +582,11 @@
 
       <div class="contact-actions">
         <a
+          id="copyEmail"
           href="mailto:mudit.chandak32007@gmail.com"
           class="contact-button"
+          aria-label="Email me and copy my email address"
+          aria-live="polite"
         >
           EMAIL ME ↗
         </a>
@@ -954,6 +986,63 @@
   </div>
 
 
+  <!-- MovieMatch -->
+  <div class="modal" id="movieMatchModal" aria-hidden="true">
+    <div class="modal-window">
+      <div class="modal-window-bar">
+        <div class="modal-window-title">
+          <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span>moviematch.exe</span>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close MovieMatch project">×</button>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-meta">
+          <span>03 / PROJECT</span>
+          <span>RECOMMENDATION SYSTEMS</span>
+        </div>
+
+        <h2>MOVIE<br>MATCH</h2>
+
+        <div class="modal-role">Content-Based Movie Recommendation App</div>
+
+        <p>
+          MovieMatch helps users discover films from a TMDB-derived catalog. A FastAPI
+          service powers a browser interface for searching titles, choosing a movie,
+          reviewing personalized recommendations, and opening full movie details.
+        </p>
+
+        <div class="modal-detail-grid">
+          <div class="modal-detail">
+            <h4>RECOMMENDATION ENGINE</h4>
+            <ul>
+              <li>TF-IDF features built from plot overviews, taglines, keywords, genres, directors, cast, and collections</li>
+              <li>Content similarity combined with genre preference fit and Bayesian quality scoring</li>
+              <li>Weighted ranking with a 200-candidate retrieval stage</li>
+              <li>Recommendation results expose content, genre, quality, and final scores</li>
+            </ul>
+          </div>
+
+          <div class="modal-detail">
+            <h4>APP &amp; API</h4>
+            <ul>
+              <li>FastAPI endpoints for movie search, lookup, recommendations, and details</li>
+              <li>Search and lookup by TMDB ID or exact title</li>
+              <li>Optional genre preferences and configurable recommendation count</li>
+              <li>Movie details include genres, director, cast, runtime, ratings, and links</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-tags">
+          <span>PYTHON</span><span>FASTAPI</span><span>PANDAS</span>
+          <span>SCIKIT-LEARN</span><span>TF-IDF</span><span>TMDB DATA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- NFC Healthcare -->
   <div class="modal" id="nfcModal" aria-hidden="true">
     <div class="modal-window">
@@ -980,7 +1069,7 @@
 
       <div class="modal-content">
         <div class="modal-meta">
-          <span>03 / PROJECT</span>
+          <span>04 / PROJECT</span>
           <span>HARDWARE / SOFTWARE</span>
         </div>
 
