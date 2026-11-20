@@ -556,13 +556,13 @@ img {
   font-size: 12px;
 }
 
-.about-intro h2 {
+.about-intro h3 {
   font-family: var(--display);
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 0.95;
 }
 
-.about-intro h2 span {
+.about-intro h3 span {
   color: var(--yellow);
 }
 
@@ -691,7 +691,8 @@ img {
   position: relative;
 
   width: 440px;
-  height: 380px;
+  min-height: 380px;
+  height: auto;
   padding: 0;
 
   background: #eee;
@@ -759,7 +760,7 @@ img {
   font-size: 12px;
 }
 
-.experience-window-body h2 {
+.experience-window-body h3 {
   margin-top: 28px;
 
   font-size: 30px;
@@ -768,7 +769,7 @@ img {
   letter-spacing: -0.03em;
 }
 
-.experience-window-body h3 {
+.experience-window-body h4 {
   margin-top: 18px;
 
   font-size: 18px;
@@ -812,6 +813,8 @@ img {
   padding: 35px;
   border: 2px solid var(--electric);
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: var(--blue-dark);
 
   transition:
@@ -860,9 +863,12 @@ img {
 }
 
 .project-tech {
-  position: absolute;
-  left: 35px;
-  bottom: 30px;
+  position: static;
+  max-width: 100%;
+  margin-top: auto;
+  padding: 28px 55px 35px 0;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
 
   font-family: var(--mono);
   font-size: 10px;
@@ -938,6 +944,8 @@ img {
 
 .leadership-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   min-height: 430px;
   padding: 35px;
@@ -984,11 +992,9 @@ img {
 }
 
 .card-description {
-  position: absolute;
-  left: 35px;
-  bottom: 30px;
-
   max-width: 400px;
+  margin-top: auto;
+  padding-top: 28px;
 
   font-size: 13px;
   line-height: 1.5;
@@ -1053,7 +1059,7 @@ img {
   max-width: 650px;
 }
 
-.resume-intro h2 {
+.resume-intro h3 {
   margin-bottom: 30px;
 
   font-family: var(--display);
@@ -1061,7 +1067,7 @@ img {
   line-height: 0.9;
 }
 
-.resume-intro h2 span {
+.resume-intro h3 span {
   display: block;
   color: var(--yellow);
 }
@@ -1158,14 +1164,14 @@ img {
   font-size: 11px;
 }
 
-.contact-section h1 {
+.contact-section h2 {
   font-family: var(--display);
   font-size: clamp(5rem, 13vw, 13rem);
   line-height: 0.78;
   letter-spacing: -0.06em;
 }
 
-.contact-section h1 span {
+.contact-section h2 span {
   color: transparent;
   -webkit-text-stroke: 2px var(--black);
 }
@@ -1671,7 +1677,8 @@ img {
 
   .experience-window {
     width: min(440px, 88vw);
-    height: 350px;
+    min-height: 350px;
+    height: auto;
   }
 
   .experience-window.previous {
@@ -1723,10 +1730,21 @@ img {
   }
 
   .nav-links {
+    min-width: 0;
+    flex: 1;
+    justify-content: flex-start;
     gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-links a {
+    flex: 0 0 auto;
+    white-space: nowrap;
     font-size: 8px;
   }
 
@@ -1807,11 +1825,6 @@ img {
     padding: 25px;
   }
 
-  .project-tech {
-    left: 25px;
-    bottom: 25px;
-  }
-
   .skill-row {
     grid-template-columns: 30px 1fr;
     gap: 10px;
@@ -1835,7 +1848,7 @@ img {
     padding: 90px var(--section-x) 120px;
   }
 
-  .contact-section h1 {
+  .contact-section h2 {
     font-size: 19vw;
   }
 
